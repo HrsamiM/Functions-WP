@@ -1,5 +1,5 @@
 <?php
-//Function LNK descargar manual
+//Function LNK descargar manual ACF button
 function manual_button_on_product_page() {
   $manual = get_field('pdf_download');
  echo '<a href='.$manual.'> <button type="button" class="btn-descargas">Descargar Manual</button></a>';
