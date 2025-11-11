@@ -1,0 +1,21 @@
+/*Shorcode Menu footer*/
+ul.foo-menu a {
+  color: #ffffff;
+  line-height: 1.8em;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+ul.foo-menu a:hover{
+  color: var(--secund-color);
+}
+
+ul.foo-menu {
+  list-style: none;
+}
+
+.bficons{
+  margin-right: 10px;
+  color: var(--secund-color);
+  font-size: 13px;
+}
