@@ -1,0 +1,189 @@
+/*============================
+===== Shorcode Menu footer =====
+=============================*/
+ul.foo-menu a {
+  color: var(--sgdary-color);
+  line-height: 1.8em;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: var(--textfont);
+}
+
+ul.foo-menu a:hover{
+  color: var(--thr-color);
+}
+
+ul.foo-menu {
+  list-style: none;
+  padding: 0px !important;
+}
+
+.bficons{
+  margin-right: 10px;
+  color: var(--sgdary-color);
+  font-size: 16px;
+}
+
+
+
+/*===========================
+==== Dual BTN Function ========
+============================*/
+.ciw-dual-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+	font-family: var(--mainfont);
+}
+
+.ciw-btn {
+    display: inline-block;
+    padding: 7px 25px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s ease;
+	text-transform: uppercase;
+	border-radius: 5px;
+	font-size: 14px;
+	transform: translateY(0);
+}
+
+.ciw-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Estimate */
+.ciw-btn-estimate {
+    background: var(--sgdary-color);
+    color: var(--main-color);
+}
+
+.ciw-btn-estimate:hover {
+    background: var(--main-color);
+	color: var(--white--bg);
+}
+
+/* Call */
+.ciw-btn-call {
+    background: #22222200;
+	border: 1px solid var(--sgdary-color);
+    color: var(--white--bg);
+}
+
+.ciw-btn-call:hover {
+    background: var(--sgdary-color);
+	color: var(--main-color);
+}
+
+
+/*===========================
+======== Services Cards ===========
+============================*/
+.services-swiper .swiper-wrapper {
+  align-items: stretch;
+}
+.services-swiper .swiper-slide {
+  display: flex;
+  height: auto;
+}
+.service-card{
+	display: flex;
+  	flex-direction: column;
+  	height: 100%;
+	box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.3);
+	border-radius: 5px;
+}
+.img-svcard{
+	width: 100%;
+	background-color: var(--white--bg);
+	margin-bottom: -1px !important;
+}
+.info-svcard{
+	padding: 20px;
+	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+  	text-align: center;
+	background-color: var(--white--bg) !important;
+}
+.btn-contact{
+	font-family: var(--mainfont);
+	text-transform: uppercase;
+	font-weight: 600;
+	color: var(--main-color);
+}
+.btn-contact:hover{
+	color: var(--sgdary-color);
+}
+.services-swiper.few-items {
+  display: flex;
+  justify-content: center;
+}
+
+.services-swiper.few-items .swiper-wrapper {
+  justify-content: center;
+}
+/*===========================
+======== Swiper Carrousel ===========
+============================*/
+.carousel-wrapper{
+  position: relative;
+}
+
+.services-swiper {
+  width: 100%;
+  padding: 40px 0;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+.custom-arrow {
+  color: var(--thr-color);
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.custom-arrow i {
+  font-size: 30px;
+}
+
+/* 👉 DESKTOP (outside) */
+@media (min-width: 1024px){
+
+  .swiper-button-prev{
+    left: -60px;
+  }
+
+  .swiper-button-next{
+    right: -60px;
+  }
+
+}
+
+/* 👉 TABLET & MOBILE (inside) */
+@media (max-width: 1023px){
+	.custom-arrow i {
+  		font-size: 20px;
+	}
+	.custom-arrow{
+		width: 25px;
+  		height: 25px;
+	}
+
+  .swiper-button-prev{
+    left: 0px;
+  }
+
+  .swiper-button-next{
+    right: 0px;
+  }
+
+}
