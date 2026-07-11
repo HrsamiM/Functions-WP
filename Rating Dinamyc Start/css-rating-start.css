@@ -1,0 +1,11 @@
+/* ==================================
+Review Function - Starts
+====================================*/
+.star-rating::after {
+	content: "★★★★★";
+	display: inline-block;
+	color: transparent;
+	background: linear-gradient(90deg, #09182A var(--rating-percent), #CA1D2D var(--rating-percent));
+	background-clip: text;
+	-webkit-background-clip: text;
+}
